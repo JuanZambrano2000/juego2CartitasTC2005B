@@ -405,6 +405,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boton: {fileID: 979267395}
+  _datosBorreguito: {fileID: 11400000, guid: 661176aa61ae10048954ee9789d4969a, type: 2}
+  _datosCaballito: {fileID: 11400000, guid: 6a3935a5a61691849a3c8795d5ef2fe1, type: 2}
+  _datosConejito: {fileID: 11400000, guid: 18cc9cfad590b744c8a996085af78771, type: 2}
+  _datosFoquita: {fileID: 11400000, guid: 40eebe3644b5b874a93af90198d88987, type: 2}
+  _datosGatito: {fileID: 11400000, guid: e1058c9b3f4a0c947a96d42986a5fb4a, type: 2}
+  _datosHuroncito: {fileID: 11400000, guid: c07dc2200032b2741bffb9a239448a63, type: 2}
+  _datosOsito: {fileID: 11400000, guid: 1f1aabe309975ff4c82c81c5b71c2e3a, type: 2}
+  _datosPandita: {fileID: 11400000, guid: 479ba0725b7c8e24bbf30223a637f1b2, type: 2}
+  _datosPerrito: {fileID: 11400000, guid: 91b879cfc352a3640b1dcafc6e8bddfd, type: 2}
+  _datosPollito: {fileID: 11400000, guid: 3a320b17d8fdb11418ee5eb28c633c60, type: 2}
 --- !u!1001 &1353696174
 PrefabInstance:
   m_ObjectHideFlags: 0
