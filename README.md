@@ -6,3 +6,10 @@ Crea un pequeño juego de cartas que cumpla con los siguientes requisitos:
 - Crea 10 definiciones de diferentes tarjetas y agrega un manager a tu escena de donde se pueda obtener datos de la baraja
 - Al iniciar la escena utiliza random para poblar 5 prefabs con 5 scriptable objects distintos
 - Crea un botón "aleatorizar" que al ser presionado redefina las tarjetas en la escena 
+
+## Game 2 Little Cards
+Define a scriptable object with the characteristics of a pokemon/yugioh style card (at least attack, name, and a texture)
+- Create 1 prefab that uses the scriptable object to populate the card
+- Create 10 different card definitions and add a manager to your scene where you can get deck data from
+- When starting the scene use random to populate 5 prefabs with 5 different scriptable objects
+- Create a "randomize" button that when pressed will redefine the cards in the scene
