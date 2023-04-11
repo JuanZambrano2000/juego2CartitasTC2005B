@@ -8,7 +8,7 @@ public class ButtonController : MonoBehaviour
 {
     [SerializeField]
     private Button _boton;
-
+    
     [SerializeField]
     private CartaSO _datosBorreguito;
     [SerializeField]
@@ -52,7 +52,7 @@ public class ButtonController : MonoBehaviour
         cartaLoader._nombre.text = _listaCartas[randomIndex]._nombre;
         cartaLoader._fuerza.text = _listaCartas[randomIndex]._fuerza;
         cartaLoader._spriteRenderer.sprite = _listaCartas[randomIndex]._sprite;
-        instancia.transform.position = new Vector3(i * 2f, 1f, 0f);
+        instancia.transform.position = new Vector3(-9f + i*4, 1f, 0f);
 
         _instancias.Add(instancia);
     }
