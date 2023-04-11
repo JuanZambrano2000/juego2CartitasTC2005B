@@ -7,17 +7,16 @@ using UnityEngine.Assertions;
 public class CartaLoader : MonoBehaviour
 {
     [SerializeField]
-    private CartaSO _datos;
+    public CartaSO _datos;
     [SerializeField]
-    private TMP_Text _nombre;
+    public TMP_Text _nombre;
     [SerializeField]
-    private TMP_Text _fuerza;
+    public TMP_Text _fuerza;
     [SerializeField]
-    private SpriteRenderer _spriteRenderer;
+    public SpriteRenderer _spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        Assert.IsNotNull(_datos, "Los datos del prefab carta no pueden ser nulos");
         _nombre.text = _datos._nombre;
         _fuerza.text = _datos._fuerza;
         _spriteRenderer.sprite = _datos._sprite;

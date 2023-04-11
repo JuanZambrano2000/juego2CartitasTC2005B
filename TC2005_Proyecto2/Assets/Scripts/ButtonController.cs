@@ -8,31 +8,7 @@ public class ButtonController : MonoBehaviour
 {
     [SerializeField]
     private Button _boton;
-    [SerializeField] 
-    private CartaSO[] _cartasSO;
 
-    private List<CartaSO> _listaCartas = new List<CartaSO>();
-    
-    private void OnClick()
-    {
-        Debug.Log("El botón fue presionado!");
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-      Assert.IsNotNull(_boton, "Falta agregar el boton");  
-      _boton.onClick.AddListener(OnClick);
-      for (int i = 0; i < _cartasSO.Length; i++)
-      {
-        _listaCartas.Add(_cartasSO[i]);
-      }
-    }
-    
-}
-
-
-/*
     [SerializeField]
     private CartaSO _datosBorreguito;
     [SerializeField]
@@ -53,6 +29,56 @@ public class ButtonController : MonoBehaviour
     private CartaSO _datosPerrito;
     [SerializeField]
     private CartaSO _datosPollito;
-    //List<CartaSO> _listaSO = new List<CartaSO>{_datosBorreguito, _datosCaballito, _datosConejito, _datosFoquita, _datosGatito, _datosHuroncito, _datosOsito, _datosPandita, _datosPerrito, _datosPollito};
-    List<CartaSO> _listaSO = new List<CartaSO>;
-    _listaSO.add(_datosBorreguito);*/
+    [SerializeField]
+    private GameObject _carta;
+    private int randomIndex;
+    private GameObject _instancia0;
+
+    public List<CartaSO> _listaCartas = new List<CartaSO>();
+
+    public void CreatePrefab()
+    {
+      Destroy(_instancia0);
+      /*
+      List<GameObject> _instanciaCartas = new List<GameObject>(5);
+      List<CartaLoader> _cartaLoader
+      */    
+      int randomIndex = UnityEngine.Random.Range(0, _listaCartas.Count);
+      _instancia0 = Instantiate(_carta);
+      CartaLoader _cartaLoaderInstancia0 = _instancia0.GetComponent<CartaLoader>();
+      _cartaLoaderInstancia0._nombre.text = _listaCartas[randomIndex]._nombre;
+      _cartaLoaderInstancia0._fuerza.text = _listaCartas[randomIndex]._fuerza;
+      _cartaLoaderInstancia0._spriteRenderer.sprite = _listaCartas[randomIndex]._sprite;
+      _instancia0.transform.position = new Vector3(0f, 1f, 0f);
+
+      
+    }
+
+    private void OnClick()
+    {
+      CreatePrefab();
+      //Debug.Log(_listaCartas[0]._nombre);
+    }
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+      _listaCartas.Add(_datosBorreguito);
+      _listaCartas.Add(_datosCaballito);
+      _listaCartas.Add(_datosConejito);
+      _listaCartas.Add(_datosFoquita);
+      _listaCartas.Add(_datosGatito);
+      _listaCartas.Add(_datosHuroncito);
+      _listaCartas.Add(_datosOsito);
+      _listaCartas.Add(_datosPandita);
+      _listaCartas.Add(_datosPerrito);
+      _listaCartas.Add(_datosPollito);
+
+      Assert.IsNotNull(_boton, "Falta agregar el boton");  
+      Assert.IsNotNull(_carta, "Falta agregar el prefab de la carta");  
+      Assert.IsNotNull(_listaCartas, "Falta agregar las cartas a la lista"); 
+      _boton.onClick.AddListener(OnClick);
+      
+    }
+    
+}
