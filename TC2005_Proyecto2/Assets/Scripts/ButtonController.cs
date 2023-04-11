@@ -29,6 +29,10 @@ public class ButtonController : MonoBehaviour
     private CartaSO _datosPerrito;
     [SerializeField]
     private CartaSO _datosPollito;
+
+    [SerializeField]
+    private CartaSO _datosValiente;
+
     [SerializeField]
     private GameObject _carta;
     private int randomIndex;
@@ -79,6 +83,7 @@ public class ButtonController : MonoBehaviour
       _listaCartas.Add(_datosPandita);
       _listaCartas.Add(_datosPerrito);
       _listaCartas.Add(_datosPollito);
+      //_listaCartas.Add(_datosValiente);
 
       Assert.IsNotNull(_boton, "Falta agregar el boton");  
       Assert.IsNotNull(_carta, "Falta agregar el prefab de la carta");  
