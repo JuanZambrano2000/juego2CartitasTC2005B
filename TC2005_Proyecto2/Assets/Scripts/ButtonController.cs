@@ -35,21 +35,27 @@ public class ButtonController : MonoBehaviour
     private GameObject _instancia0;
 
     public List<CartaSO> _listaCartas = new List<CartaSO>();
-
+    private List<GameObject> _instancias = new List<GameObject>();
     public void CreatePrefab()
     {
-      Destroy(_instancia0);
-      /*
-      List<GameObject> _instanciaCartas = new List<GameObject>(5);
-      List<CartaLoader> _cartaLoader
-      */    
-      int randomIndex = UnityEngine.Random.Range(0, _listaCartas.Count);
-      _instancia0 = Instantiate(_carta);
-      CartaLoader _cartaLoaderInstancia0 = _instancia0.GetComponent<CartaLoader>();
-      _cartaLoaderInstancia0._nombre.text = _listaCartas[randomIndex]._nombre;
-      _cartaLoaderInstancia0._fuerza.text = _listaCartas[randomIndex]._fuerza;
-      _cartaLoaderInstancia0._spriteRenderer.sprite = _listaCartas[randomIndex]._sprite;
-      _instancia0.transform.position = new Vector3(0f, 1f, 0f);
+      foreach (GameObject instancia in _instancias)
+    {
+        Destroy(instancia);
+    }
+    _instancias.Clear();
+
+    for (int i = 0; i < 5; i++)
+    {
+        int randomIndex = UnityEngine.Random.Range(0, _listaCartas.Count);
+        GameObject instancia = Instantiate(_carta);
+        CartaLoader cartaLoader = instancia.GetComponent<CartaLoader>();
+        cartaLoader._nombre.text = _listaCartas[randomIndex]._nombre;
+        cartaLoader._fuerza.text = _listaCartas[randomIndex]._fuerza;
+        cartaLoader._spriteRenderer.sprite = _listaCartas[randomIndex]._sprite;
+        instancia.transform.position = new Vector3(i * 2f, 1f, 0f);
+
+        _instancias.Add(instancia);
+    }
 
       
     }
