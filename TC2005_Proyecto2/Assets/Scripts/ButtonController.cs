@@ -85,6 +85,8 @@ public class ButtonController : MonoBehaviour
       Assert.IsNotNull(_listaCartas, "Falta agregar las cartas a la lista"); 
       _boton.onClick.AddListener(OnClick);
       
+      // Crear los prefabs en cuanto inicie el juego
+      CreatePrefab();
     }
     
 }
