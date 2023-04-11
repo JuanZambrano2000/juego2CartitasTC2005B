@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Pandita
   m_EditorClassIdentifier: 
   _nombre: Pandita
-  _fuerza: 6
+  _fuerza: Ternura 8.8
   _sprite: {fileID: 21300000, guid: 7d26fc025fbc8e8448e6f92d3e793190, type: 3}

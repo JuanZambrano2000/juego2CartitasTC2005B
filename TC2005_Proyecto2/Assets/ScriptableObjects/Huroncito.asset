@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Huroncito
   m_EditorClassIdentifier: 
   _nombre: Huroncito
-  _fuerza: 1
+  _fuerza: Ternura 6.5
   _sprite: {fileID: 21300000, guid: bdc8133b6b76b7a479d9d3c347601eaa, type: 3}

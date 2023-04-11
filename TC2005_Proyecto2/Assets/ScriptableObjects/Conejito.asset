@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Conejito
   m_EditorClassIdentifier: 
   _nombre: Conejito
-  _fuerza: 2
+  _fuerza: Ternura 9
   _sprite: {fileID: 21300000, guid: 17eda7d1d6643434d9dc64586bac6a26, type: 3}

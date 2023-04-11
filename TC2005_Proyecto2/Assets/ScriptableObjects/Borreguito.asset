@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Borreguito
   m_EditorClassIdentifier: 
   _nombre: Borreguito
-  _fuerza: 6
+  _fuerza: Ternura 7
   _sprite: {fileID: 21300000, guid: 402c4831f060a2444a7e97ee968a055e, type: 3}

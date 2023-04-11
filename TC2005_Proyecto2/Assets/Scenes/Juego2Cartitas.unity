@@ -270,7 +270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066960386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: -42, z: 3}
+  m_LocalPosition: {x: -35.27, y: -114.8, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -301,6 +301,7 @@ MonoBehaviour:
   _datosPandita: {fileID: 11400000, guid: 479ba0725b7c8e24bbf30223a637f1b2, type: 2}
   _datosPerrito: {fileID: 11400000, guid: 91b879cfc352a3640b1dcafc6e8bddfd, type: 2}
   _datosPollito: {fileID: 11400000, guid: 3a320b17d8fdb11418ee5eb28c633c60, type: 2}
+  _datosValiente: {fileID: 0}
   _carta: {fileID: 1977954445571686097, guid: ed290b0936fe3c74986cdf68c4aaae6c, type: 3}
   _listaCartas: []
 --- !u!1 &1434423316

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Foquita
   m_EditorClassIdentifier: 
   _nombre: Foquita
-  _fuerza: 4
+  _fuerza: Ternura 8.5
   _sprite: {fileID: 21300000, guid: ab9a55f7e4209f74fabcb297b46f5e99, type: 3}
